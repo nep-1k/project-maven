@@ -9,6 +9,8 @@
         <artifactId>project-maven</artifactId>
         <version>1.0</version>
     </parent>
+
+    <!-- Этот модуль содержит инструкции для сборки проекта  -->
     <artifactId>original-module</artifactId>
 
     <properties>
@@ -140,6 +142,26 @@
                         </goals>
                         <configuration>
                             <classifier>jar-with-dependencies</classifier>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+
+            <!-- Плагин для автозапуска приложения  -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-antrun-plugin</artifactId>
+                <version>1.8</version>
+                <executions>
+                    <execution>
+                        <phase>install</phase>
+                        <goals>
+                            <goal>run</goal>
+                        </goals>
+                        <configuration>
+                            <tasks>
+                                <java jar="${project.build.directory}/original-module-1.0-jar-with-dependencies.jar" fork="true" />
+                            </tasks>
                         </configuration>
                     </execution>
                 </executions>
