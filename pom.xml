@@ -9,7 +9,7 @@
     <version>1.0</version>
     <packaging>pom</packaging>
 
-    <!-- Общий pom файл для двух модулей  -->
+    <!-- Main pom file for two project modules  -->
     <modules>
         <module>installer-module</module>
         <module>original-module</module>

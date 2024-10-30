@@ -9,7 +9,7 @@
         <version>1.0</version>
     </parent>
 
-    <!-- Этот pom файл используется для установки сторонней библиотеки в локальный репозиторий  -->
+    <!-- This pom file is used to install an external library into the local repository.  -->
     <artifactId>installer-module</artifactId>
     <packaging>pom</packaging>
 
@@ -21,7 +21,7 @@
     <build>
         <plugins>
 
-            <!-- Плагин для установки сторонней библиотеки -->
+            <!-- Plugin for installing an external library -->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-install-plugin</artifactId>

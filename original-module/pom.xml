@@ -10,7 +10,7 @@
         <version>1.0</version>
     </parent>
 
-    <!-- Этот pom файл содержит инструкции для сборки проекта  -->
+    <!-- This pom file contains the build instructions for the project.  -->
     <artifactId>original-module</artifactId>
 
     <properties>
@@ -81,7 +81,7 @@
                 </configuration>
             </plugin>
 
-            <!-- Плагин для теста. Исключаем StrangeTest  -->
+            <!-- Test plugin. Excluding StrangeTest  -->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-surefire-plugin</artifactId>
@@ -93,7 +93,7 @@
                 </configuration>
             </plugin>
 
-            <!-- Плагин для сохранения зависимостей в target/lib  -->
+            <!-- Plugin for saving dependencies to the target/lib directory.  -->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-dependency-plugin</artifactId>
@@ -113,7 +113,7 @@
                 </executions>
             </plugin>
 
-            <!-- Плагин для JAR файла  -->
+            <!-- Plugin for JAR file  -->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-jar-plugin</artifactId>
